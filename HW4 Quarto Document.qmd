@@ -54,49 +54,61 @@ The `echo: false` option disables the printing of code (only output is displayed
 ```
 
 ```{r}
-standardize <- getRMSE((vector, center = TRUE, scale = TRUE))
-  {  predictors <- vector1  
-    responses <- vector2
-}
-  return(list(result = vector, predictors  = vector1, responses = vector2))
+#standardize <- getRMSE((vector, center = TRUE, scale = TRUE))
+  #{  predictors <- vector1  
+    #responses <- vector2
+#}
+  #return(list(result = vector, predictors  = vector1, responses = vector2))
 ```
 
 ```{r}
-set.seed(10)
-n <- 100
-x <- runif(n)
-resp <- 3 + 10*x + rnorm(n)
-pred <- predict(lm(resp ~ x), data.frame(x))
+#set.seed(10)
+#n <- 100
+#x <- runif(n)
+#resp <- 3 + 10*x + rnorm(n)
+#pred <- predict(lm(resp ~ x), data.frame(x))
 ```
 
 ```{r}
-standardize <- getMAE((vector, center = TRUE, scale = TRUE))
-  {  predictors <- vector1  
-    responses <- vector2
-}
-  return(list(result = vector, predictors  = vector1, responses = vector2))
+#standardize <- getMAE((vector, center = TRUE, scale = TRUE))
+  #{  #predictors <- vector1  
+    #responses <- vector2
+#}
+  #return(list(result = vector, predictors  = vector1, responses = vector2))
 ```
 
 ```{r}
-set.seed(10)
-n <- 100
-x <- runif(n)
-resp <- 3 + 10*x + rnorm(n)
-pred <- predict(lm(resp ~ x), data.frame(x))
+#set.seed(10)
+#n <- 100
+#x <- runif(n)
+#resp <- 3 + 10*x + rnorm(n)
+#pred <- predict(lm(resp ~ x), data.frame(x))
 ```
 
 ```{r}
-standardize <- getMAE((vector, center = TRUE, scale = TRUE))
-  {  predictors <- vector1  
-    responses <- vector2
-}
-  return(list(result = vector, predictors  = vector1, responses = vector2))
+#is.atomic(predictors, responses)
+#is.numeric(predictors, responses)
+#is.vector(predictors, responses)
 ```
 
 ```{r}
-set.seed(10)
-n <- 100
-x <- runif(n)
-resp <- 3 + 10*x + rnorm(n)
-pred <- predict(lm(resp ~ x), data.frame(x))
+#set.seed(10)
+#n <- 100
+#x <- runif(n)
+#resp <- 3 + 10*x + rnorm(n)
+#pred <- predict(lm(resp ~ x), data.frame(x))
+```
+
+```{r}
+#GET('https://newsapi.org/v2/top-headlines?country=us&apiKey=74e95f1d3c4a449aa4f92136231b56dc')
+```
+
+```{r}
+library(tidyverse)
+library(httr)
+library(jsonlite)
+```
+
+```{r}
+path <- "https://www.usatoday.com/story/sports/college/baseball/2024/06/24/college-world-series-tennessee-texas-am-live-updates-highlights/74193677007/"
 ```
