@@ -1,0 +1,102 @@
+---
+title: "HW4 Quarto Doc"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+```{r}
+#The purpose of the lapply() function is to apply the function to lists. According to the slideshow, the purpose is to "obtain a list object". An example as provided by the slideshow:
+#set.seed(10) 
+#my_list <- list(rnorm(100), runif(10), rgamma(40, shape = 1, rate = 1))
+#Apply mean() function to each list element
+#To give additional arguments to FUN we add them on afterward
+#The purrr equivalent of it would probably be "map" as it "always returns a list", according to one of the slides.
+#map(my_list, mean)
+```
+
+```{r}
+#list(cor(x, y, method = “kendall”))
+```
+
+```{r}
+#The purrr() package provides a tidyverse alternative to the apply() family.
+#Providing a complete and consistent set of tools for working with functions and vectors.
+#https://rstudio.github.io/cheatsheets/html/purrr.html
+```
+
+```{r}
+#In R, a transformation naturally returns the naturally modified argument (df). While, side-effects don't. Instead, they silently return the solution using the "invisible()".
+```
+
+```{r}
+#In regards to the "sd" function, when you call a function, it creates temporary function environments. And this also explains why variables in functions don't exist outside of the functions.
+```
+
+```{r}
+standardize <- getRMSE((vector, center = TRUE, scale = TRUE))
+  {  predictors <- vector1  
+    responses <- vector2
+}
+  return(list(result = vector, predictors  = vector1, responses = vector2))
+```
+
+```{r}
+set.seed(10)
+n <- 100
+x <- runif(n)
+resp <- 3 + 10*x + rnorm(n)
+pred <- predict(lm(resp ~ x), data.frame(x))
+```
+
+```{r}
+standardize <- getMAE((vector, center = TRUE, scale = TRUE))
+  {  predictors <- vector1  
+    responses <- vector2
+}
+  return(list(result = vector, predictors  = vector1, responses = vector2))
+```
+
+```{r}
+set.seed(10)
+n <- 100
+x <- runif(n)
+resp <- 3 + 10*x + rnorm(n)
+pred <- predict(lm(resp ~ x), data.frame(x))
+```
+
+```{r}
+standardize <- getMAE((vector, center = TRUE, scale = TRUE))
+  {  predictors <- vector1  
+    responses <- vector2
+}
+  return(list(result = vector, predictors  = vector1, responses = vector2))
+```
+
+```{r}
+set.seed(10)
+n <- 100
+x <- runif(n)
+resp <- 3 + 10*x + rnorm(n)
+pred <- predict(lm(resp ~ x), data.frame(x))
+```
