@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "HW4 Quarto Document.html",
+    "href": "HW4 Quarto Document.html",
+    "title": "HW4 Quarto Doc",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "HW4 Quarto Document.html#quarto",
+    "href": "HW4 Quarto Document.html#quarto",
+    "title": "HW4 Quarto Doc",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "HW4 Quarto Document.html#running-code",
+    "href": "HW4 Quarto Document.html#running-code",
+    "title": "HW4 Quarto Doc",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\n\n#The purpose of the lapply() function is to apply the function to lists. According to the slideshow, the purpose is to \"obtain a list object\". An example as provided by the slideshow:\n#set.seed(10) \n#my_list &lt;- list(rnorm(100), runif(10), rgamma(40, shape = 1, rate = 1))\n#Apply mean() function to each list element\n#To give additional arguments to FUN we add them on afterward\n#The purrr equivalent of it would probably be \"map\" as it \"always returns a list\", according to one of the slides.\n#map(my_list, mean)\n\n\n#list(cor(x, y, method = “kendall”))\n\n\n#The purrr() package provides a tidyverse alternative to the apply() family.\n#Providing a complete and consistent set of tools for working with functions and vectors.\n#https://rstudio.github.io/cheatsheets/html/purrr.html\n\n\n#In R, a transformation naturally returns the naturally modified argument (df). While, side-effects don't. Instead, they silently return the solution using the \"invisible()\".\n\n\n#In regards to the \"sd\" function, when you call a function, it creates temporary function environments. And this also explains why variables in functions don't exist outside of the functions.\n\n\n#standardize &lt;- getRMSE((vector, center = TRUE, scale = TRUE))\n  #{  predictors &lt;- vector1  \n    #responses &lt;- vector2\n#}\n  #return(list(result = vector, predictors  = vector1, responses = vector2))\n\n\n#set.seed(10)\n#n &lt;- 100\n#x &lt;- runif(n)\n#resp &lt;- 3 + 10*x + rnorm(n)\n#pred &lt;- predict(lm(resp ~ x), data.frame(x))\n\n\n#standardize &lt;- getMAE((vector, center = TRUE, scale = TRUE))\n  #{  #predictors &lt;- vector1  \n    #responses &lt;- vector2\n#}\n  #return(list(result = vector, predictors  = vector1, responses = vector2))\n\n\n#set.seed(10)\n#n &lt;- 100\n#x &lt;- runif(n)\n#resp &lt;- 3 + 10*x + rnorm(n)\n#pred &lt;- predict(lm(resp ~ x), data.frame(x))\n\n\n#is.atomic(predictors, responses)\n#is.numeric(predictors, responses)\n#is.vector(predictors, responses)\n\n\n#set.seed(10)\n#n &lt;- 100\n#x &lt;- runif(n)\n#resp &lt;- 3 + 10*x + rnorm(n)\n#pred &lt;- predict(lm(resp ~ x), data.frame(x))\n\n\n#GET('https://newsapi.org/v2/top-headlines?country=us&apiKey=74e95f1d3c4a449aa4f92136231b56dc')\n\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(httr)\nlibrary(jsonlite)\n\n\nAttaching package: 'jsonlite'\n\nThe following object is masked from 'package:purrr':\n\n    flatten\n\n\n\npath &lt;- \"https://www.usatoday.com/story/sports/college/baseball/2024/06/24/college-world-series-tennessee-texas-am-live-updates-highlights/74193677007/\""
+  }
+]
