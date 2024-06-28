@@ -1,0 +1,3 @@
+project: HW 4
+  type: website
+  output-dir: docs
